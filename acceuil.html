@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recherche d’entreprise française – API Sirene</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Recherche d’entreprise</h1>
+        <p>Recherchez une entreprise française par nom ou SIRET.</p>
+    </header>
 
-        <input type="text" name="" id="input">
-        <button id="button">Send</button>
+    <main>    
+        <div class="search-group">
+            <label for="input">Nom ou SIRET de l'entreprise:</label>
+
+            <div class="search-controls">
+                <input type="text" name="" id="input" placeholder="Ex : Carrefour">
+
+                <button id="button">Rechercher</button>
+            </div>
+        </div>
+
         <p id="searchResults"></p>
+    </main>
 
-
+    <footer>
+        <p>Données issues de l’API Sirene (INSEE). Projet pédagogique.</p>
+    </footer>
 
 
     <script src="script.js"></script>
